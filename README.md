@@ -2,7 +2,7 @@ Help in sorting tag's attributes in jsf files.
 Order of attributes set in attr_order variable.
 Useful as hook for git, mercurial or other VCS. It's help to keep all attributes in same order, so xhtmls will be ease to read.
 As example, next tag:
-'''jsp
+```jsp
 <a4j:commandButton value="#{commonBundle.update}"
                    styleClass="linkIcon"
                    render="panel"
@@ -11,9 +11,9 @@ As example, next tag:
                    action="#{bean.update}"
                    execute="@form"
                    image="/images/search_icon_32.png"/>
-'''
+```
 will transform to this
-'''jsp
+```jsp
 <a4j:commandButton id="someId"
                    value="#{commonBundle.update}"
                    action="#{bean.update}"
@@ -22,4 +22,4 @@ will transform to this
                    render="panel"
                    limitRender="true"
                    image="/images/search_icon_32.png"/>
-'''
+```
